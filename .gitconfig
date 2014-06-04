@@ -6,14 +6,14 @@
 [push]
 	default = simple
 [alias]
-	aa = add --all
+  a = add
 	au = add --update
 	ap = add --patch
-	st = status --short --branch
+	s = status --short --branch
 	ci = commit
 	co = checkout
 	dc = diff --cached
-	lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold magenta)%d%Creset %s %C(dim yellow)(%ar) %C(bold blue)[%an]%Creset' --abbrev-commit --date=relative
+	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold magenta)%d%Creset %s %C(dim yellow)(%ar) %C(bold blue)[%an]%Creset' --abbrev-commit --date=short
   mergeff = merge --ff-only	
 
 	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
