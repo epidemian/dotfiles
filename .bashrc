@@ -41,7 +41,7 @@ fi
 
 # Uncolored prompt. The focus in a terminal window should be on the output of 
 # commands, not on the prompt
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\n\$ '
+PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1 " (%s)")\n\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
