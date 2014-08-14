@@ -9,6 +9,7 @@
   a = add
 	au = add --update
 	ap = add --patch
+	b = branch
 	s = status --short --branch
 	ci = commit
 	co = checkout
