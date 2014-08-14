@@ -91,6 +91,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export EDITOR="emacs -nw"
+
 # Environment variables.
 export GROOVY_HOME=/home/demian/bin/groovy
 export PATH="$PATH:$GROOVY_HOME/bin"
