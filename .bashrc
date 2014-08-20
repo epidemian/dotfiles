@@ -39,9 +39,18 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# Uncolored prompt. The focus in a terminal window should be on the output of 
-# commands, not on the prompt
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1 " (%s)")\n\$ '
+# Use a minimal prompt.
+minps1() { PS1='\$ '; }
+# Use a fancy prompt.
+fullps1() {
+  local reset="\[\e[0m\]"
+  local cpath="\[\e[0;36m\]"
+  local cbranch="\[\e[0;35m\]"
+  local branch='$(__git_ps1)'
+  local chroot='${debian_chroot:+($debian_chroot)}'
+  PS1="$chroot\u@\h:$cpath\w$cbranch$branch$reset\n\$ "
+}
+fullps1
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
