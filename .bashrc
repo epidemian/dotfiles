@@ -39,6 +39,11 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+# Configure __git_ps1.
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUPSTREAM=auto
+GIT_PS1_DESCRIBE_STYLE=branch
+
 # Use a minimal prompt.
 minps1() { PS1='\$ '; }
 # Use a fancy prompt.
