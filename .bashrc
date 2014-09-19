@@ -48,7 +48,7 @@ fullps1() {
   local cbranch="\[\e[0;35m\]"
   local branch='$(__git_ps1)'
   local chroot='${debian_chroot:+($debian_chroot)}'
-  PS1="$chroot\u@\h:$cpath\w$cbranch$branch$reset\n\$ "
+  PS1="$chroot\u@\h:$cpath\w$cbranch$branch$reset\n\\$ "
 }
 fullps1
 
