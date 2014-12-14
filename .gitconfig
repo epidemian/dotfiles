@@ -15,7 +15,10 @@
 	co = checkout
 	dc = diff --cached
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold magenta)%d%Creset %s %C(dim yellow)(%ar) %C(bold blue)[%an]%Creset' --abbrev-commit --date=short
-  mergeff = merge --ff-only	
+  mergeff = merge --ff-only
+  unstage = reset HEAD --
+  discard = checkout --
+  pr = !sh -c 'git fetch ${2:-origin} pull/$1/head && git checkout -b pr-$1 FETCH_HEAD' -
 
 	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 	clean-merged = !git branch --merged | grep  -v '^*' | xargs -n 1 git branch -d
