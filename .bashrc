@@ -110,9 +110,11 @@ export EDITOR="emacs -nw"
 # Environment variables.
 export GROOVY_HOME=/home/demian/bin/groovy
 export PATH="$PATH:$GROOVY_HOME/bin"
+export PATH="$PATH:/home/demian/bin/google_appengine"
 
+# rbenv config.
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
