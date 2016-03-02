@@ -1,3 +1,5 @@
-# Ignore IDEA files.
+# Temporary files.
+*~
+# IDEA files.
 *.iml
 .idea
