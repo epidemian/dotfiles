@@ -2,6 +2,3 @@ $include /etc/inputrc
 
 # Ignore case on tab completion.
 set completion-ignore-case on
-
-# Display matches for ambiguous patterns at first tab press.
-set show-all-if-ambiguous on
