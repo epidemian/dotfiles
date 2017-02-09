@@ -21,3 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# Ubuntu make installation of Ubuntu Make binary symlink
+PATH=/home/demian/.local/share/umake/bin:$PATH
+

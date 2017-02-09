@@ -1,2 +1,2 @@
 alias e="emacs -nw"
-alias serve-dir="python3 -m http.server 8000"
+alias serve-dir="ruby -run -ehttpd . -p8000"
