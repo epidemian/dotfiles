@@ -34,7 +34,7 @@ PROMPT_COMMAND="history -a; history -c; history -r;"
 shopt -s checkwinsize
 
 # Prepend cd to directory names automatically
-shopt -s autocd
+#shopt -s autocd
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -119,6 +119,8 @@ if ! shopt -oq posix; then
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
+  elif [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
   fi
 fi
 
