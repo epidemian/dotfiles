@@ -29,6 +29,9 @@ HISTFILESIZE=$HISTSIZE
 # finishes
 PROMPT_COMMAND="history -a; history -c; history -r;"
 
+# Let reverse search receive ctrl+S to do a forward search.
+stty -ixon
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
