@@ -3,3 +3,5 @@
 # IDEA files.
 *.iml
 .idea
+# VSCode config files
+.vscode
