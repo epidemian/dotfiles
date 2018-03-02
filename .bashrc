@@ -25,7 +25,7 @@ shopt -s cmdhist
 HISTSIZE=100000
 HISTFILESIZE=$HISTSIZE
 
-# Share history across sessions: save and reload the history after each command 
+# Share history across sessions: save and reload the history after each command
 # finishes
 PROMPT_COMMAND="history -a; history -c; history -r;"
 
@@ -126,8 +126,6 @@ if ! shopt -oq posix; then
     . /usr/local/etc/bash_completion
   fi
 fi
-
-export EDITOR="emacs -nw"
 
 # Environment variables.
 export GROOVY_HOME=/home/demian/bin/groovy

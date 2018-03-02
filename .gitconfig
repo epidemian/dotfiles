@@ -3,6 +3,7 @@
 	email = epidemian@gmail.com
 [core]
 	excludesfile = ~/.gitignore
+	editor = code --wait
 [push]
 	default = simple
 [alias]
