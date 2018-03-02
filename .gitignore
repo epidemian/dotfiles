@@ -1,5 +1,6 @@
 # Temporary files.
 *~
+.DS_Store
 # IDEA files.
 *.iml
 .idea
