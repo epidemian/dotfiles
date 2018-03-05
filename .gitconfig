@@ -23,4 +23,5 @@
 	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 	clean-merged = !git branch --merged | grep  -v '^*' | xargs -n 1 git branch -d
 	pf = push --force-with-lease
-
+	# Positive alternative.
+	praise = blame
