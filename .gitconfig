@@ -7,7 +7,7 @@
 [push]
 	default = simple
 [alias]
-  a = add
+	a = add
 	au = add --update
 	ap = add --patch
 	b = branch
@@ -25,3 +25,4 @@
 	pf = push --force-with-lease
 	# Positive alternative.
 	praise = blame
+	amend = commit --amend --no-edit
