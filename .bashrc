@@ -127,10 +127,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Environment variables.
-export GROOVY_HOME=/home/demian/bin/groovy
-export PATH="$PATH:$GROOVY_HOME/bin"
-export PATH="$PATH:/home/demian/bin/google_appengine"
+# Add user bin directories.
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 # rbenv config.
 export PATH="$HOME/.rbenv/bin:$PATH"
