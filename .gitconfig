@@ -28,3 +28,4 @@
 	# Positive alternative.
 	praise = blame
 	amend = commit --amend --no-edit
+	aliases = config --get-regexp 'alias.*'

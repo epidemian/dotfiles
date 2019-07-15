@@ -60,12 +60,7 @@ GIT_PS1_DESCRIBE_STYLE=branch
 minps1() { PS1='\$ '; }
 # Use a fancy prompt.
 fullps1() {
-  local reset="\[\e[0m\]"
-  local cpath="\[\e[0;36m\]"
-  local cbranch="\[\e[0;35m\]"
-  local branch='$(__git_ps1)'
-  local chroot='${debian_chroot:+($debian_chroot)}'
-  PS1="$chroot\u@\h:$cpath\w$cbranch$branch$reset\n\\$ "
+  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\[\e[0;36m\]\w\[\e[0;35m\]$(__git_ps1)\[\e[0m\]\n\$ '
 }
 fullps1
 
@@ -133,12 +128,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Add user bin directories.
-export PATH=$PATH:$HOME/.local/bin:$HOME/bin
-
 # rbenv config.
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Set up direnv hook.
+eval "$(direnv hook bash)"

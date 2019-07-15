@@ -21,6 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Ubuntu make installation of Ubuntu Make binary symlink
-PATH=/home/demian/.local/share/umake/bin:$PATH
-
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
