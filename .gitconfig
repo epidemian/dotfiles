@@ -16,6 +16,7 @@
 	s = status --short --branch
 	ci = commit
 	co = checkout
+	fco = !git branch | fzf | xargs git checkout
 	dc = diff --cached
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(bold magenta)%d%Creset %s %C(dim yellow)(%ar) %C(bold blue)[%an]%Creset' --abbrev-commit --date=short
 	mergeff = merge --ff-only
@@ -25,7 +26,6 @@
 	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 	clean-merged = !git branch --merged | grep  -v '^*' | xargs -n 1 git branch -d
 	pf = push --force-with-lease
-	# Positive alternative.
-	praise = blame
+	praise = blame # Positive alternative :)
 	amend = commit --amend --no-edit
 	aliases = config --get-regexp 'alias.*'
