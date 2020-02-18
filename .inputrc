@@ -2,3 +2,6 @@ $include /etc/inputrc
 
 # Ignore case on tab completion.
 set completion-ignore-case on
+
+# Avoid copy & paste mistakes and "pastejacking".
+set enable-bracketed-paste on
