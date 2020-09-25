@@ -29,3 +29,5 @@
 	praise = blame # Positive alternative :)
 	amend = commit --amend --no-edit
 	aliases = config --get-regexp 'alias.*'
+[init]
+	defaultBranch = main
