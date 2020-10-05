@@ -31,3 +31,5 @@
 	aliases = config --get-regexp 'alias.*'
 [init]
 	defaultBranch = main
+[rebase]
+	autoStash = true
