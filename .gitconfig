@@ -24,11 +24,15 @@
 	discard = checkout --
 	pr = !sh -c 'git fetch ${2:-origin} pull/$1/head && git checkout -b pr-$1 FETCH_HEAD' -
 	serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
-	clean-merged = !git branch --merged | grep  -v '^*' | xargs -n 1 git branch -d
+	clean-merged = !git branch --merged | grep  -v '^*' | xargs -n 1 git branch --delete
 	pf = push --force-with-lease
 	praise = blame # Positive alternative :)
 	amend = commit --amend --no-edit
 	aliases = config --get-regexp 'alias.*'
+	gone = !LANG=en git branch --format='%(if:equals=gone)%(upstream:track,nobracket)%(then)%(refname:short)%(end)' | grep .
+	prune-local = !git gone | xargs --no-run-if-empty git branch --delete --force
+	pull-prune = !git pull --prune && git prune-local
+	pp = pull-prune
 [init]
 	defaultBranch = main
 [rebase]
