@@ -1,4 +1,7 @@
 # Simple HTTP server for current directory
 alias serve-dir="ruby -run -ehttpd . -p8000"
-
+# Abbreviations
 alias be="bundle exec"
+alias g=git
+# Ubuntu installs bat as batcat
+alias bat=batcat
