@@ -3,5 +3,6 @@ alias serve-dir="ruby -run -ehttpd . -p8000"
 # Abbreviations
 alias be="bundle exec"
 alias g=git
+alias open=xdg-open
 # Ubuntu installs bat as batcat
 alias bat=batcat
