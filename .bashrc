@@ -60,7 +60,19 @@ GIT_PS1_DESCRIBE_STYLE=branch
 minps1() { PS1='\$ '; }
 # Use a fancy prompt.
 fullps1() {
-  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\[\e[0;36m\]\w\[\e[0;35m\]$(__git_ps1)\[\e[0m\]\n\$ '
+  local red='\[\e[31;1m\]'
+  local green='\[\e[32;1m\]'
+  local magenta='\[\e[35;1m\]'
+  local cyan='\[\e[36;1m\]'
+  local reset='\[\e[0m\]'
+
+  local chroot='${debian_chroot:+($debian_chroot)}'
+  local dir='\w'
+  local git_status='$(__git_ps1)'
+  local result_color='$([ "$?" == "0" ] && echo "'${green}'" || echo "'${red}'")'
+  local prompt_ch='❱  '
+
+  PS1="\n${chroot}${cyan}${dir}${magenta}${git_status}\n${result_color}${prompt_ch}${reset}"
 }
 fullps1
 
