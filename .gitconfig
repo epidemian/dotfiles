@@ -38,3 +38,5 @@
 	defaultBranch = main
 [rebase]
 	autoStash = true
+[pull]
+	ff = only
