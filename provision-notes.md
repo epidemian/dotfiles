@@ -7,7 +7,7 @@ Notes from last computer provision
     - download .tar from website
     - copy to /opt/firefox
     - `chown -R demian:demian /opt/firefox`
-- sync vscode settings
+- install vscode from .deb package https://code.visualstudio.com/Download
 - set up dotfiles running setup.sh
 - install rbenv and ruby-build form source (Ubuntu packages always lag behind)
 - run `bundle install` on $HOME

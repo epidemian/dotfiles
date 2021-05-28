@@ -1,7 +1,6 @@
 #!/bin/bash
 set -o errexit -o nounset -o pipefail
 
-sudo snap install --classic code
 packages=(
   bat
   byzanz
