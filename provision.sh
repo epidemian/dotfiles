@@ -7,6 +7,7 @@ packages=(
   cloc
   cowsay
   direnv
+  fd-find
   fonts-firacode
   fzf
   gimp
@@ -24,3 +25,8 @@ packages=(
   zoxide
 )
 sudo apt install --no-install-recommends "${packages[@]}"
+
+# Ubuntu installs bat as batcat
+ln -s $(which batcat) ~/.local/bin/bat
+# and fd as fdfind
+ln -s $(which fdfind) ~/.local/bin/fd
