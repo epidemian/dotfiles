@@ -21,5 +21,6 @@ packages=(
   tig
   vlc
   xclip
+  zoxide
 )
 sudo apt install --no-install-recommends "${packages[@]}"

@@ -149,3 +149,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # Set up direnv hook.
 eval "$(direnv hook bash)"
+
+# Initialize zoxide as `j` and `ji`
+eval "$(zoxide init bash --cmd j)"
