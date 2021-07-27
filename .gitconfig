@@ -34,6 +34,7 @@
 	pull-prune = !git pull --prune && git prune-local
 	pp = pull-prune
 	ri = rebase --interactive --autosquash
+	ca = commit --all
 [init]
 	defaultBranch = main
 [rebase]
