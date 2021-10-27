@@ -147,6 +147,9 @@ eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# Have global Yarn binaries available
+export PATH="$HOME/.yarn/bin:$PATH"
+
 # Set up direnv hook.
 eval "$(direnv hook bash)"
 
