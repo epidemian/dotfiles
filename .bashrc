@@ -147,11 +147,11 @@ eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Have global Yarn binaries available
-export PATH="$HOME/.yarn/bin:$PATH"
-
 # Set up direnv hook.
 eval "$(direnv hook bash)"
 
 # Initialize zoxide as `j` and `ji`
 eval "$(zoxide init bash --cmd j)"
+
+# Initialize Rust's cargo
+source "$HOME/.cargo/env"
