@@ -1,4 +1,20 @@
-Notes from last computer provision
+## Backup old disk/computer data
+
+- Back up full $HOME to external drive with rsync:
+    ```
+    rsync -av /home/demian/ /media/demian/Backup/<dir_name>
+    ```
+
+    Or, using an ignorelist to avoid copying unnecessary stuff:
+
+    ```
+    wget https://raw.githubusercontent.com/rubo77/rsync-homedir-excludes/master/rsync-homedir-excludes.txt -O /var/tmp/ignorelist
+    rsync -av --exclude-from=/var/tmp/ignorelist /home/demian/ /media/demian/Backup/<dir_name>
+    ```
+
+- Make sure to back up .bash_history!
+
+## Provision new disk/computer
 
 - set up keyboard layout as English (intl., with AltGr dead keys)
 - install packages from provision.sh
@@ -12,6 +28,8 @@ Notes from last computer provision
 - set up dotfiles running setup.sh
 - install rbenv and ruby-build form source (Ubuntu packages always lag behind)
 - run `bundle install` on $HOME
+- install Rust running rustup: https://www.rust-lang.org/tools/install
 - install other software manually
   - chrome
   - calibre
+  - OBS
