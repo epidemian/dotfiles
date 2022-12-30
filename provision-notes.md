@@ -8,11 +8,12 @@
     Or, using an ignorelist to avoid copying unnecessary stuff:
 
     ```
-    wget https://raw.githubusercontent.com/rubo77/rsync-homedir-excludes/master/rsync-homedir-excludes.txt -O /var/tmp/ignorelist
-    rsync -av --exclude-from=/var/tmp/ignorelist /home/demian/ /media/demian/Backup/<dir_name>
+    rsync -av --exclude-from=rsync-homedir-excludes.txt /home/demian/ /media/demian/Backup/<dir_name>
     ```
 
-- Make sure to back up .bash_history!
+- Make sure to back up .bash_history
+- Make sure Firefox Sync synched everything
+- Make sure vscode preferences have been synched
 
 ## Provision new disk/computer
 
