@@ -151,7 +151,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 eval "$(direnv hook bash)"
 
 # Initialize zoxide as `j` and `ji`
-eval "$(zoxide init bash --cmd j)"
+eval "$(zoxide init bash --cmd j --no-aliases)"
 
 # Initialize Rust's cargo
 source "$HOME/.cargo/env"
