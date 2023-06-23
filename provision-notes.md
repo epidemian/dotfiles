@@ -19,7 +19,7 @@
 
 - set up keyboard layout as English (intl., with AltGr dead keys)
 - install packages from provision.sh
-- install system indicator: https://extensions.gnome.org/extension/120/system-monitor/
+- install system indicator: https://extensions.gnome.org/extension/3010/system-monitor-next/
 - install Firefox and Spotify as .deb packages instead of snaps (and any other bloated pre-installed snap)
 - install Firefox dev edition & Sync
     - download .tar from website
