@@ -26,7 +26,6 @@ packages=(
 )
 sudo apt install --no-install-recommends "${packages[@]}"
 
-# Ubuntu installs bat as batcat
-ln -s $(which batcat) ~/.local/bin/bat
-# and fd as fdfind
+mkdir -p ~/.local/bin
+# Ubuntu installs fd as fdfind
 ln -s $(which fdfind) ~/.local/bin/fd
