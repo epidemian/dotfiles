@@ -13,18 +13,17 @@
 
 - Make sure to back up .bash_history
 - Make sure Firefox Sync synched everything
+  - Take note of which profile is being used
 - Make sure vscode preferences have been synched
 
 ## Provision new disk/computer
 
+- choose a new host name (even if it's same machine and OS, will make things easier)
 - set up keyboard layout as English (intl., with AltGr dead keys)
 - install packages from provision.sh
 - install system indicator: https://extensions.gnome.org/extension/3010/system-monitor-next/
-- install Firefox and Spotify as .deb packages instead of snaps (and any other bloated pre-installed snap)
-- install Firefox dev edition & Sync
-    - download .tar from website
-    - copy to /opt/firefox
-    - `chown -R demian:demian /opt/firefox`
+- install Spotify as .deb packages instead of snap (and any other bloated pre-installed snap)
+- if Firefox Sync doesn't retrieve history or bookmarks data, copy those from backup (https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
 - install vscode from .deb package https://code.visualstudio.com/Download
 - set up dotfiles running setup.sh
 - install rbenv and ruby-build form source (Ubuntu packages always lag behind)
