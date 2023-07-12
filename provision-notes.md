@@ -21,8 +21,10 @@
 - choose a new host name (even if it's same machine and OS, will make things easier)
 - set up keyboard layout as English (intl., with AltGr dead keys)
 - install packages from provision.sh
+- remove Firefox snap and install as .deb or from source
+  - remove snap: https://askubuntu.com/questions/1399383/how-to-install-firefox-as-a-traditional-deb-package-without-snap-in-ubuntu-22
+  - install: https://support.mozilla.org/en-US/kb/install-firefox-linux
 - install system indicator: https://extensions.gnome.org/extension/3010/system-monitor-next/
-- install Spotify as .deb packages instead of snap (and any other bloated pre-installed snap)
 - if Firefox Sync doesn't retrieve history or bookmarks data, copy those from backup (https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
 - install vscode from .deb package https://code.visualstudio.com/Download
 - set up dotfiles running setup.sh
@@ -30,6 +32,7 @@
 - run `bundle install` on $HOME
 - install Rust running rustup: https://www.rust-lang.org/tools/install
 - install other software manually
+  - spotify (make sure it's not a snap!)
   - chrome
   - calibre
   - OBS
