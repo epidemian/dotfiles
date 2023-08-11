@@ -20,14 +20,15 @@ shopt -s histappend
 
 # Save multi-line commands as one command
 shopt -s cmdhist
+# Preserve newlines on multi-line commands
+shopt -s lithist
+# Separate history file entries with a timestamp. This way, multi-line entries
+# can be correctly retrieved when navigating history (e.g., up arrow, ctrl+R).
+HISTTIMEFORMAT='%F %T '
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=100000
 HISTFILESIZE=$HISTSIZE
-
-# Share history across sessions: save and reload the history after each command
-# finishes
-PROMPT_COMMAND="history -a; history -c; history -r;"
 
 # Let reverse search receive ctrl+S to do a forward search.
 stty -ixon
