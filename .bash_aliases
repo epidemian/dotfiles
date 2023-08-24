@@ -4,7 +4,7 @@ alias serve-dir="ruby -run -ehttpd . -p8000"
 alias be="bundle exec"
 alias g=git
 alias gs="git s"
-alias open=xdg-open
+alias xo=xdg-open
 alias dc=docker-compose
 # Misc
 alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
