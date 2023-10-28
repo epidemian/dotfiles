@@ -6,8 +6,6 @@
 	editor = code --wait
 [push]
 	default = simple
-[includeIf "gitdir:~/toptal/"]
-  path = .gitconfig-toptal
 [alias]
 	a = add
 	au = add --update
