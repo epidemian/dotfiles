@@ -119,6 +119,14 @@ killport() {
   lsof -t -i :"$1" -s TCP:LISTEN | xargs -r kill
 }
 
+# Fancy man(1) alternatives.
+gay() {
+  COLUMNS=$((COLUMNS / 4)) man "$1" | toilet --termwidth --font pagga | lolcat --force | less -R
+}
+bot() {
+  COLUMNS=$((COLUMNS / 3)) man "$1" | toilet --termwidth --font future | lolcat --force --freq 0.01 --seed 540 | less -R
+}
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
