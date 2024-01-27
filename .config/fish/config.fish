@@ -51,6 +51,10 @@ function rot13 -d "Powerful anti-spoilers cipher"
     tr A-Za-z N-ZA-Mn-za-m
 end
 
+function crot -d "Copy rot13"
+    echo "rot13("(echo $argv | rot13)")" | c
+end
+
 ### PATH & tool initialization
 
 # Initialize Rust's cargo
