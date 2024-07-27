@@ -53,7 +53,7 @@ function rot13 -d "Powerful anti-spoilers cipher"
 end
 
 function crot -d "Copy rot13"
-    echo "rot13("(echo $argv | rot13)")" | c
+    echo -n "rot13("(echo $argv | rot13)")" | c
 end
 
 ### PATH & tool initialization
