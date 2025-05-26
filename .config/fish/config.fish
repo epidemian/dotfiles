@@ -53,8 +53,9 @@ end
 
 ### PATH & tool initialization
 
-# Initialize Rust's cargo
+# Add Rust and Go binaries to PATH
 set -gx --prepend PATH ~/.cargo/bin
+set -gx --append PATH /usr/local/go/bin
 
 # Initialize zoxide as `j` and `ji`
 zoxide init fish --cmd j | source
