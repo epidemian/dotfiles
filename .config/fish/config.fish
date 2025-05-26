@@ -17,13 +17,8 @@ alias bat batcat
 # Note: these should probably be defined each on a separate file, as fish likes
 # it (see funcsave(1)).
 
-function c -d "Copy to clipboard"
-    xclip -selection clipboard
-end
-
-function v -d "Paste from clipboard"
-    xclip -o -selection clipboard
-end
+alias c fish_clipboard_copy
+alias v fish_clipboard_paste
 
 function serve-dir -d "Simple HTTP server for current directory"
     ruby -run -ehttpd . -p8000
