@@ -65,4 +65,4 @@ set -gx --prepend PATH ~/.cargo/bin
 zoxide init fish --cmd j | source
 
 # Initialize rbenv
-~/.rbenv/bin/rbenv init - fish | source
+test -d ~/.rbenv && ~/.rbenv/bin/rbenv init - fish | source
