@@ -4,5 +4,8 @@
 # IDEA files.
 *.iml
 .idea
-# VSCode config files
+# VSCode config files.
 .vscode
+# Local direnv files.
+.envrc
+.direnv/
