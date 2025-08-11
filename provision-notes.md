@@ -28,6 +28,8 @@
 - if Firefox Sync doesn't retrieve history or bookmarks data, copy those from backup (https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
 - install vscode from .deb package https://code.visualstudio.com/Download
 - set up dotfiles running setup.sh
+- install `asdf` (as a precompiled binary): https://asdf-vm.com/guide/getting-started.html
+  - `asdf plugin add ruby`
 - install rbenv and ruby-build form source (Ubuntu packages always lag behind)
 - run `bundle install` on $HOME
 - install Rust running rustup: https://www.rust-lang.org/tools/install
