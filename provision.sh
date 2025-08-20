@@ -26,6 +26,6 @@ packages=(
 )
 sudo apt install --no-install-recommends "${packages[@]}"
 
-mkdir -p ~/.local/bin
+mkdir ~/bin
 # Ubuntu installs fd as fdfind
-ln -s $(which fdfind) ~/.local/bin/fd
+ln -s $(which fdfind) ~/bin/fd
