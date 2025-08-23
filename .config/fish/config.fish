@@ -20,6 +20,10 @@ alias bat batcat
 alias c fish_clipboard_copy
 alias v fish_clipboard_paste
 
+function mkcd -d "mkdir + cd" -a path
+    mkdir -p -- $path && cd -- $path
+end
+
 function serve-dir -d "Simple HTTP server for current directory"
     ruby -run -ehttpd . -p8000
 end
