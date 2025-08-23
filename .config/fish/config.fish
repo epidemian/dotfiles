@@ -7,7 +7,6 @@ end
 abbr -a be bundle exec
 abbr -a g git
 abbr -a gs git s
-abbr -a xo xdg-open
 abbr -a wl wc -l
 # Fix dumb name for bat(1) on Ubuntu repositories.
 alias bat batcat
