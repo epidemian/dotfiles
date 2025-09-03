@@ -32,7 +32,7 @@
 	prune-local = !git gone | xargs --no-run-if-empty git branch --delete --force
 	pull-prune = !git pull --prune && git prune-local
 	pp = pull-prune
-	ri = rebase --interactive --autosquash
+	ri = rebase --interactive --autosquash --rebase-merges
 	ca = commit --all
 [init]
 	defaultBranch = main
