@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DOTFILES=(.bash_aliases .bashrc .gitconfig .gitignore .inputrc .profile .ssh/config Gemfile .config/fish)
+DOTFILES=(.bash_aliases .bashrc .gitconfig .gitignore .inputrc .profile .ssh/config .config/fish)
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 for file in "${DOTFILES[@]}"
