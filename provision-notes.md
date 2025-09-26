@@ -11,7 +11,7 @@
     rsync -av --exclude-from=rsync-homedir-excludes.txt /home/demian/ /media/demian/Backup/<dir_name>
     ```
 
-- Make sure to back up .bash_history
+- Make sure to back up shell history (.bash_history or ~/.local/share/fish/fish_history)
 - Make sure Firefox Sync synched everything
   - Take note of which profile is being used
 - Make sure vscode preferences have been synched
