@@ -20,10 +20,13 @@ packages=(
   hyperfine
   imagemagick
   jq
+  lolcat
   pv
   ripgrep
   ruby
+  sl
   tig
+  toilet
   vlc
   xclip
   zoxide
