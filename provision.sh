@@ -35,4 +35,4 @@ sudo apt install --no-install-recommends "${packages[@]}"
 
 mkdir -p ~/bin
 # Ubuntu installs fd as fdfind
-ln -s $(which fdfind) ~/bin/fd
+[ -f ~/bin/fd ] || ln -s $(which fdfind) ~/bin/fd
